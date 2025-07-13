@@ -75,7 +75,10 @@ button.equal {
   background: linear-gradient(145deg, #00c9ff, #92fe9d);
   color: #222;
   font-weight: 700;
-  grid-column: span 1;
+}
+
+.tall {
+  grid-row: span 2;
 }
 
 button.equal:hover {
@@ -86,6 +89,11 @@ button.zero {
   grid-column: span 2;
 }
 
+button:focus {
+  outline: 2px solid #00ffd5;
+  outline-offset: 2px;
+}
+
 button[data-op="clear"] {
   background: linear-gradient(145deg, #ff6a00, #ee0979);
   color: white;
@@ -94,3 +102,22 @@ button[data-op="clear"] {
 button[data-op="clear"]:hover {
   box-shadow: 0 0 15px #ff6a00aa;
 }
+
+button[data-decimal] {
+  background: rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+}
+
+button[data-decimal]:hover {
+  box-shadow: 0 0 10px #00ffccaa;
+}
+
+#backspace {
+  background: linear-gradient(145deg, #333, #111);
+  color: #fff;
+}
+
+#backspace:hover {
+  box-shadow: 0 0 10px #000;
+}
+
